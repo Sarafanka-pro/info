@@ -2,7 +2,7 @@
 Public information about SRF products
 
 
-### REST API FOR 1C
-Integration API for developers
+### REST API FOR DEVELOPERS
+Integration API for developers (1C, BITRIX, PYTHON, etc)
 
-[example](rest1c/simple_example.py)
+[PYTHON](rest1c/python_simple_example.py)
