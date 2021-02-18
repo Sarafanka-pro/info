@@ -1,3 +1,7 @@
+"""
+Пример авторизации и создания чека в системе для учета денежного потока
+"""
+
 from uuid import uuid4
 
 import requests
@@ -15,7 +19,7 @@ API_URL = 'https://api.sarafanka.space/'  # TEST ENV
 LOGIN_TOKEN = 'api/user/login/token/'
 # API URN для создания чека (POST) и получения списка чеков (GET)
 CHECK = 'api1c/check_cyrillic/list/'
-# API URN для отмены чека (PATCH)
+# API URN для отмены чека (PUT)
 CANCEL_CHECK = 'api1c/check/cyrillic/canceled/{}/'
 
 
