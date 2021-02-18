@@ -100,7 +100,9 @@ assert r.status_code == 200, list_result
 cancel_data = {
     'ВозвратОтменаЧека': True,
 }
+# Генерация uri - подставляем Ууид ранее созданного чека
 cancel_uri = API_URL + CANCEL_CHECK.format(list_result['results'][0]['Ууид'])
+# Отправка запроса
 r = requests.put(cancel_uri, headers=headers, json=cancel_data)
 cancel_result = r.json()
 assert r.status_code == 200, cancel_result
